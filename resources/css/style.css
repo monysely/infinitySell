@@ -1,0 +1,481 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+a, p {
+  font-family: 'Istok Web', sans-serif;
+  font-weight: 400;
+}
+
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 2px;
+}
+::-webkit-scrollbar-button {
+  width: 0px;
+  height: 0px;
+}
+::-webkit-scrollbar-thumb {
+  background: rgb(59, 30, 133);
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(239, 93, 80);
+}
+::-webkit-scrollbar-thumb:active {
+  background: rgb(239, 93, 80);
+}
+::-webkit-scrollbar-track {
+  background:white;
+  border: 0px none #ffffff;
+  border-radius: 50px;
+}
+::-webkit-scrollbar-track:hover {
+  background: white;
+}
+::-webkit-scrollbar-track:active {
+  background: white;
+}
+::-webkit-scrollbar-corner {
+  background: transparent;
+}
+
+/* Background colors */
+.bg-1 {
+    background-color:#613659;
+}
+
+.text-2 {
+  color: rgb(255,173,90);
+}
+
+.bg-2 {
+    background-color: rgb(239, 93, 80);
+    color: white;
+}
+
+.bg-2-transparent {
+  background-color: rgba(239, 93, 80, 0.827);
+  color: white;
+}
+
+.bg-3 {
+    background-color: rgb(59, 30, 133);
+}
+
+.text-violet {
+  color: rgb(59, 30, 133);
+}
+
+.bg-3-transparent {
+  background-color: rgba(59, 30, 133, 0.563);
+}
+
+/* Cover form login & register */
+.cover {
+    background-image: url("https://images.pexels.com/photos/12858180/pexels-photo-12858180.png?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2");
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+
+
+/* Button login & register */
+.my-btn:hover {
+    background-color: rgb(59, 30, 133);
+    transition: 0.5s;
+    color: white;
+}
+
+.my-btn-3:hover {
+  background-color: rgb(239, 93, 80);
+  transition: 0.5s;
+  color: white;
+}
+
+.my-btn-orange{
+  transition: 350ms;
+}
+
+.my-btn-orange:hover{
+  background-color: white;
+  color: rgb(59, 30, 133);
+}
+
+/* Button Logout */
+.my-a{
+    text-decoration: none;
+    color: #f2b5ad;
+}
+
+
+/* Image */
+.card-index-img {
+    height: 20vh;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.hero-main {
+    height: 60vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 100%;
+    background-attachment: fixed;
+    opacity: 85%;
+
+
+}
+
+.second-hero{
+    height: 30vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 100%;
+    background-attachment: fixed;
+    opacity: 85%;
+
+}
+
+.main-velina {
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(59, 30, 133, 0.545);
+}
+
+.sub-categories{
+    text-decoration: none;
+    transition: 350ms;
+    color: white;
+    /* line-height: 1.65rem; */
+}
+
+.sub-categories:hover{
+    text-decoration: underline;
+    color: rgb(239, 93, 80);
+    text-underline-offset: 10px;
+    text-decoration-thickness: 3px;
+}
+
+.hero-title {
+  font-size: 5.5rem;
+  font-family: 'Life Savers', cursive;
+  font-weight: 400;
+}
+
+.second-hero-title {
+  font-size: 4rem;
+  font-family: 'Life Savers', cursive;
+  font-weight: 400;
+}
+
+.sub-title-hero{
+  font-size: 1.8rem;
+  font-family: 'Source Serif 4', serif;
+  font-weight: 400;
+}
+
+.hero-category {
+  font-size: 1.1rem;
+}
+
+.button-up {
+  bottom: 6%;
+  right: 3%;
+  z-index: 999;
+  text-shadow: 0.5px 0.5px 3px black;
+}
+
+.button-up:hover{
+  cursor: pointer;
+}
+
+.pagination > li.active > a, .pagination > li.active > span{
+  background-color:rgb(239, 93, 80);
+  border: 1px solid transparent;
+}
+
+.nav-error{
+  /* top: 1.9%; */
+  right: 19%;
+  width: 16%;
+  z-index: 999;
+  position: absolute;
+  border-radius: 0 50px 0 50px;
+}
+
+.index-error{
+  top: 1.9%;
+  width: 100%;
+  z-index: 999;
+}
+
+
+.dropdown-item:hover{
+  background-color:rgb(239, 93, 80);
+}
+
+
+/* SPINNER PER CARICAMENTO LINGUA */
+
+#outline {
+  stroke-dasharray: 2.42777px, 242.77666px;
+  stroke-dashoffset: 0;
+  -webkit-animation: anim 1.6s linear infinite;
+  animation: anim 1.6s linear infinite;
+}
+
+@-webkit-keyframes anim {
+  12.5% {
+    stroke-dasharray: 33.98873px, 242.77666px;
+    stroke-dashoffset: -26.70543px;
+  }
+
+  43.75% {
+    stroke-dasharray: 84.97183px, 242.77666px;
+    stroke-dashoffset: -84.97183px;
+  }
+
+  100% {
+    stroke-dasharray: 2.42777px, 242.77666px;
+    stroke-dashoffset: -240.34889px;
+  }
+}
+
+@keyframes anim {
+  12.5% {
+    stroke-dasharray: 33.98873px, 242.77666px;
+    stroke-dashoffset: -26.70543px;
+  }
+
+  43.75% {
+    stroke-dasharray: 84.97183px, 242.77666px;
+    stroke-dashoffset: -84.97183px;
+  }
+
+  100% {
+    stroke-dasharray: 2.42777px, 242.77666px;
+    stroke-dashoffset: -240.34889px;
+  }
+}
+ 
+/* LOADING SCREEN 2 */
+
+.loader {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 200px;
+  height: 200px;
+  background: transparent;
+  border: 3px solid rgba(0, 102, 255, 0.1);
+  border-radius: 50%;
+  text-align: center;
+  line-height: 200px;
+  font-family: sans-serif;
+  font-size: 20px;
+  color: #0066ff;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  text-shadow: 0 0 10px #0066ff;
+  box-shadow: 0 0 20px rgba(0, 0, 0, .15);
+}
+
+.loader::before {
+  content: '';
+  position: absolute;
+  top: -3px;
+  left: -3px;
+  width: 100%;
+  height: 100%;
+  border: 3px solid transparent;
+  border-top: 3px solid #0066ff;
+  border-right: 3px solid #0066ff;
+  border-radius: 50%;
+  animation: animateC 2s linear infinite;
+}
+
+.loader span {
+  display: block;
+  position: absolute;
+  top: calc(50% - 2px);
+  left: 50%;
+  width: 50%;
+  height: 4px;
+  background: transparent;
+  transform-origin: left;
+  animation: animate 2s linear infinite;
+}
+
+.loader span::before {
+  content: '';
+  position: absolute;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #00aeff;
+  top: -6px;
+  right: -8px;
+  box-shadow: 0 0 20px 5px #0066ff;
+}
+
+@keyframes animateC {
+  0% {
+    transform: rotate(0deg);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes animate {
+  0% {
+    transform: rotate(45deg);
+  }
+
+  100% {
+    transform: rotate(405deg);
+  }
+}
+
+
+
+
+
+@keyframes animate {
+  0% {
+    opacity: 0.3;
+  }
+
+  80% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0.3;
+  }
+}
+
+
+/* LAVORA CON NOI */
+
+.lavora-main{
+  height: 60vh;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  position: relative;
+}
+
+.lavora-inner{
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(59, 30, 133, 0.545);
+  backdrop-filter: blur(2px);
+}
+
+.index-cards {
+  height: 30vh;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.bianco-sporco {
+  background-color: rgb(244, 242, 242);
+  border: 0;
+  border: 1px solid rgba(59, 30, 133, 0.102);
+}
+
+@media screen and (max-width: 1912px) {
+  .nav-error{
+    /* top: 1.9%; */
+    /* right: 19%; */
+    top: 0;
+    right: 0;
+    width: 100%;
+    z-index: 999;
+    position: relative;
+    border-radius: 0 0 0 0;
+  }
+}
+
+/* MEDIA QUERY MEDIUM */
+
+@media screen and (max-width: 1440px) {
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .sub-title-hero{
+    font-size: 1.2rem;
+  }
+
+  .hero-category {
+    font-size: 0.8rem;
+  }
+
+  .second-hero-title {
+    font-size: 2rem;
+  }
+
+  .index-cards {
+    height: 20vh;
+    overflow: hidden;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  
+  .index-cards {
+    height: 20vh;
+    overflow: hidden;
+  }
+}
+
+/* MEDIA QUERY MOBILE */
+
+@media screen and (max-width: 400px) {
+  .hero-title {
+    font-size: 2.8rem;
+  }
+
+  .sub-title-hero{
+    font-size: 1.2rem;
+  }
+
+  .hero-category {
+    font-size: 0.8rem;
+  }
+
+  .hero-main {
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 100%;
+    background-attachment: fixed;
+  }
+
+  .index-cards {
+    height: 15vh;
+    overflow: hidden;
+  }
+}
+
